@@ -1,28 +1,63 @@
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
 import { useTranslations } from 'next-intl';
-import { InView } from '@/components/ui/in-view';
 
 export default function About() {
   const t = useTranslations('about');
 
-  return (
-    <section id="about" className="py-16 lg:max-w-5xl mx-auto">
-      <div className="container w-80 md:w-auto mx-auto flex flex-col items-center gap-8 lg:px-16">
-        <div className="text-center">
-          <Badge variant="secondary" className="mb-6">
-            {t('badge')}
-          </Badge>
-          <h2 className="mb-3 text-pretty font-semibold md:mb-4 text-3xl lg:text-4xl">
-            {t('title')}
-          </h2>
-        </div>
+  const servicesBadge = [
+    'React Development',
+    'Next.js',
+    'Angular',
+    'Java',
+    'TypeScript',
+    'Node.js',
+    'API Development',
+    'Database Design',
+    'Responsive Design',
+    'Testing',
+    'Performance Optimization',
+    'UI/UX Implementation',
+  ];
 
-        <InView className="space-y-6 text-muted-foreground leading-relaxed">
-          <p className="text-pretty">{t('paragraphs.first')}</p>
-          <p className="text-pretty">{t('paragraphs.second')}</p>
-          <p className="text-pretty">{t('paragraphs.third')}</p>
-        </InView>
+  return (
+    <section id="about">
+      <div className="container mx-auto max-w-5xl">
+        <div className="border-x border-primary/10">
+          <div className="flex flex-col gap-9 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
+            <div className="flex flex-col gap-4">
+              <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
+                {t('badge')}
+              </p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
+                {t('paragraphs.first')}{' '}
+                <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">
+                  {t('title')}
+                </span>{' '}
+                <span className="border-b-2">développeur Full-Stack</span>.
+              </h2>
+              <h5 className="text-secondary-foreground font-normal">
+                {t('paragraphs.second')}
+              </h5>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-sm text-primary uppercase font-medium">
+                Compétences
+              </p>
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                {servicesBadge?.map((value, index) => (
+                  <div
+                    key={index}
+                    className="w-fit py-1.5 px-3 border border-primary/10 rounded-lg bg-background/50"
+                  >
+                    <p className="text-xs sm:text-sm font-medium text-primary">
+                      {value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

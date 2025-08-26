@@ -15,12 +15,11 @@
     "contact": "Contact"
   },
   "about": {
-    "badge": "My Journey",
-    "title": "About Me",
+    "badge": "About Me",
+    "title": "crafting digital experiences",
     "paragraphs": {
-      "first": "Passionate about creation and solving technical challenges, I first worked as a live performance technician from 2011 to 2020, a period that taught me rigor, adaptability, and daily project management. I then worked as a sales associate at Lacoste until 2024, where I strengthened my customer service skills and communication abilities.",
-      "second": "I will complete my intensive bootcamp at La Capsule in December 2024, and since early 2025, I've challenged myself to create one web project per week. Each mini-MVP has allowed me to explore new features, push my technical limits, and refine my global vision of what makes a high-performance website. In parallel, I continue my self-taught education — after React and Next.js, I started learning Angular and Java in early May 2025 to broaden my skill set.",
-      "third": "I am currently looking for an apprenticeship position within a digital services company to evolve in a true team environment, benefit from a formative 'step up', and eventually share my experience with others (following the 'each one teach one' philosophy). Outside of coding, I'm an avid gamer: these days, it's Valorant that occupies my evenings!"
+      "first": "Hey there. I'm Nhat-Quan — Full-Stack developer based in France, currently looking for an apprenticeship position within a digital services company to evolve in a true team environment and contribute to ambitious projects.",
+      "second": "Previously worked as a live performance technician and sales associate at Lacoste, bringing strong project management and communication skills to development."
     }
   },
   "techStack": {

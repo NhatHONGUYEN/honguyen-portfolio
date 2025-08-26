@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/Theme/theme-provider';
-import ParticlesBackGround from '@/components/ParticlesBackGround';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
@@ -83,9 +82,6 @@ export default async function LocaleLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed inset-0 -z-10">
-            <ParticlesBackGround />
-          </div>
           <ClientWrapper messages={messages} locale={locale}>
             <div className="relative z-10">
               {children}
