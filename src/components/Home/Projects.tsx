@@ -1,82 +1,77 @@
+'use client';
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
-import { projects } from '@/lib/data';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { projects } from '@/lib/data';
 import { useTranslations, useLocale } from 'next-intl';
-import { ButtonLink } from '@/components/ui/button-link';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function Projects() {
   const t = useTranslations('projects');
   const locale = useLocale() as 'fr' | 'en';
 
   return (
-    <section id="projects" className="py-16 lg:max-w-5xl mx-auto">
-      <div className="container w-80 md:w-auto  mx-auto flex flex-col items-center gap-16 lg:px-16">
-        <div className="text-center">
-          <Badge variant="secondary" className="mb-6">
-            {t('badge')}
-          </Badge>
-          <h2 className="mb-3 text-pretty font-semibold md:mb-4 text-3xl lg:text-4xl">
-            {t('title')}
-          </h2>
-          <p className="mb-8 text-muted-foreground lg:max-w-2xl">
-            {t('description')}
-          </p>
-        </div>
-        <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {projects.slice(0, 3).map((project) => (
-            <article
-              key={project.id}
-              className="flex flex-col items-start justify-between relative group"
-            >
-              <Link
-                href={`/${locale}/project/${project.id}`}
-                className="absolute inset-0 z-10"
-              >
-                <span className="sr-only">{project.title}</span>
-              </Link>
-              <div className="relative w-full h-60 sm:h-64 md:h-72 overflow-hidden rounded-2xl">
-                <Image
-                  alt={project.title}
-                  src={project.image}
-                  className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-110"
-                  width={800}
-                  height={500}
-                  priority
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-primary/10 ring-inset" />
-              </div>
-              <div className="max-w-xl h-full">
-                <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <time
-                    dateTime={project.date[locale]}
-                    className="text-muted-foreground"
-                  >
-                    {project.date[locale]}
-                  </time>
-                  <div className="relative z-20 rounded-full bg-secondary px-3 py-1.5 font-medium text-primary hover:bg-secondary-foreground hover:text-secondary">
-                    {project.category[locale]}
+    <section id="projects">
+      <div className="container mx-auto max-w-5xl">
+        <div className="border-x border-primary/10">
+          <div className="flex flex-col max-w-3xl mx-auto gap-10 sm:gap-16 px-4 sm:px-7 py-11 md:py-20">
+            {/* Header */}
+            <div className="flex flex-col gap-4">
+              <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
+                {t('badge')}
+              </p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
+                {t('title')}
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                {t('description')}
+              </p>
+            </div>
+
+            {/* Projects List */}
+            <div className="flex flex-col gap-6">
+              {projects.slice(0, 3).map((project) => (
+                <div
+                  key={project.id}
+                  className="group flex flex-col sm:flex-row gap-6 p-6 border border-primary/10 rounded-lg hover:bg-primary/5 transition-colors duration-300"
+                >
+                  {/* Image */}
+                  <div className="w-full sm:w-32 h-32 sm:h-24 rounded-lg overflow-hidden flex-shrink-0">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={128}
+                      height={96}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 flex flex-col gap-2">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1">
+                        <h3 className="text-lg font-semibold text-primary mb-1">
+                          {project.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          {project.category[locale]} • {project.date[locale]}
+                        </p>
+                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                          {project.description[locale]}
+                        </p>
+                      </div>
+                      <Link
+                        href={`/${locale}/project/${project.id}`}
+                        className="flex-shrink-0 p-2 rounded-full border border-primary/10 hover:bg-primary/10 transition-colors duration-300"
+                      >
+                        <ArrowUpRight className="w-4 h-4 text-primary" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
-                <div className="group relative text-left">
-                  <h3 className="mt-3 text-lg/6 font-semibold group-hover:text-muted-foreground">
-                    {project.title}
-                  </h3>
-                  <p className="mt-5 text-sm/6 text-muted-foreground">
-                    {project.description[locale]}
-                  </p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="flex justify-center w-full mt-8">
-          <ButtonLink href={`/${locale}/all-projects`} size="lg">
-            <ArrowRight className="mr-2 h-5 w-5" aria-hidden="true" />
-            {t('viewMore')}
-          </ButtonLink>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
