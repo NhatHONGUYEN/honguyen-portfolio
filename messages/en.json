@@ -70,6 +70,10 @@
   "ui": {
     "scrollToTop": "Back to top"
   },
+  "experience": {
+    "title": "Professional Experience",
+    "technologies": "Technologies used"
+  },
   "metadata": {
     "title": "Nhat Portfolio",
     "description": "A simple portfolio website to showcase my projects and skills."

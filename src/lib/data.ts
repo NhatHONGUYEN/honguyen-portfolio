@@ -3,7 +3,7 @@ import {
   InstagramIcon,
   TwitterIcon,
 } from '../components/SocialIcons';
-import { IconsItem, NavigationItem, Project } from './type';
+import { IconsItem, NavigationItem, Project, Experience } from './type';
 
 export const navigation: NavigationItem[] = [
   {
@@ -578,6 +578,95 @@ export const projects: Project[] = [
       en: 'Seamlessly integrating dance videos while maintaining site performance was a major challenge. Creating CSS animations that harmonize with the rhythm and energy of dance required an artistic approach. The balance between visual creativity and information readability was complex to manage.',
     },
     github: 'https://github.com/NhatHONGUYEN/CvInteractive',
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    id: 1,
+    icon: '/logo/tkorpLogo.png',
+    fallback: 'TK',
+    role: {
+      fr: 'Développeur Fullstack – Stage',
+      en: 'Fullstack Developer – Internship',
+    },
+    company: {
+      fr: 'Tkorp, Paris',
+      en: 'Tkorp, Paris',
+    },
+    startYear: '07/2025',
+    endYear: 'Présent',
+    location: 'Paris',
+    bulletPoints: {
+      fr: [
+        'Participation aux sprints et aux revues de code dans un environnement Agile (Scrum)',
+        'Résolution de bugs et amélioration de la stabilité et de la qualité du code',
+        'Contribution au développement front-end et back-end',
+        'Documentation des fonctionnalités et suivi des tâches dans un outil de gestion de projet',
+      ],
+      en: [
+        'Participation in sprints and code reviews in an Agile environment (Scrum)',
+        'Bug resolution and improvement of code stability and quality',
+        'Contribution to front-end and back-end development',
+        'Feature documentation and task tracking in project management tools',
+      ],
+    },
+    technologies:
+      'Next.js, NestJS, TypeScript, MongoDB, Docker, GitHub Actions, DBeaver, Postman',
+  },
+  {
+    id: 2,
+    icon: '/logo/lacapsuleLogo.png',
+    fallback: 'LC',
+    role: {
+      fr: 'Formation Développeur Web',
+      en: 'Web Developer Training',
+    },
+    company: {
+      fr: 'La Capsule PARIS',
+      en: 'La Capsule PARIS',
+    },
+    startYear: '2024',
+    endYear: '2024',
+    location: 'Paris',
+    bulletPoints: {
+      fr: [
+        "RCNP Niv. 6 (Bac+4) : Concepteur-développeur d'applications web et mobile",
+        'Formation intensive en développement web full-stack',
+        'Apprentissage de React, Next.js, Node.js et bases de données',
+      ],
+      en: [
+        'RCNP Level 6 (Bachelor+4): Web and mobile application designer-developer',
+        'Intensive full-stack web development training',
+        'Learning React, Next.js, Node.js and databases',
+      ],
+    },
+  },
+  {
+    id: 3,
+    icon: '/logo/lacosteLogo.png',
+    fallback: 'LA',
+    role: {
+      fr: 'Vendeur',
+      en: 'Sales Associate',
+    },
+    company: {
+      fr: 'LACOSTE, PARIS',
+      en: 'LACOSTE, PARIS',
+    },
+    startYear: '05/2020',
+    endYear: '02/2024',
+    location: 'Paris',
+    bulletPoints: {
+      fr: [
+        'Accueil et conseil clientèle dans un environnement dynamique',
+        'Travail en équipe pour atteindre les objectifs de vente et assurer la bonne tenue du magasin',
+      ],
+      en: [
+        'Customer reception and advice in a dynamic environment',
+        'Teamwork to achieve sales objectives and ensure proper store management',
+      ],
+    },
   },
 ];
 

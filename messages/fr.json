@@ -87,6 +87,10 @@
   "ui": {
     "scrollToTop": "Retour en haut"
   },
+  "experience": {
+    "title": "Expériences Professionnelles",
+    "technologies": "Technologies utilisées"
+  },
   "metadata": {
     "title": "Nhat Portfolio",
     "description": "Un site portfolio simple pour présenter mes projets et compétences."

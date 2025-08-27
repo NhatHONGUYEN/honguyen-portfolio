@@ -52,3 +52,25 @@ export type NavigationItem = {
   href: string;
   icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
 };
+
+export type Experience = {
+  id: number;
+  icon: string;
+  fallback: string;
+  role: {
+    fr: string;
+    en: string;
+  };
+  company: {
+    fr: string;
+    en: string;
+  };
+  startYear: string;
+  endYear: string;
+  location: string;
+  bulletPoints: {
+    fr: string[];
+    en: string[];
+  };
+  technologies?: string;
+};
