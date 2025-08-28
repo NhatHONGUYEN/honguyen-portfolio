@@ -91,6 +91,9 @@
     "title": "Expériences Professionnelles",
     "technologies": "Technologies utilisées"
   },
+  "education": {
+    "title": "Formation"
+  },
   "metadata": {
     "title": "Nhat Portfolio",
     "description": "Un site portfolio simple pour présenter mes projets et compétences."

@@ -3,7 +3,13 @@ import {
   InstagramIcon,
   TwitterIcon,
 } from '../components/SocialIcons';
-import { IconsItem, NavigationItem, Project, Experience } from './type';
+import {
+  IconsItem,
+  NavigationItem,
+  Project,
+  Experience,
+  Education,
+} from './type';
 
 export const navigation: NavigationItem[] = [
   {
@@ -720,5 +726,32 @@ export const IconsList: IconsItem[] = [
     key: 10,
     src: '/images/projects/zustand.svg',
     alt: 'Zustand',
+  },
+];
+
+export const educationData: Education[] = [
+  {
+    id: 1,
+    date: '2024',
+    title: {
+      fr: "RCNP Niv. 6 (Bac+4) : Concepteur-développeur d'applications web et mobile",
+      en: 'RNCP Level 6 (Bachelor+4): Web and Mobile Application Designer-Developer',
+    },
+    subtitle: {
+      fr: 'La Capsule PARIS',
+      en: 'La Capsule PARIS',
+    },
+  },
+  {
+    id: 2,
+    date: '2009-2012',
+    title: {
+      fr: 'BAC STI Génie électronique',
+      en: 'STI Electronics Engineering Baccalaureate',
+    },
+    subtitle: {
+      fr: 'LYCÉE COUFFIGNAL, STRASBOURG',
+      en: 'COUFFIGNAL HIGH SCHOOL, STRASBOURG',
+    },
   },
 ];

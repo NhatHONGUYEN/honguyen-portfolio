@@ -1,6 +1,7 @@
 import About from '@/components/Home/About';
 import ContactSection from '@/components/Home/Contact/ContactSection';
 import Divider from '@/components/Home/Divider';
+import Education from '@/components/Home/Education';
 import Experience from '@/components/Home/Experience';
 import Header from '@/components/Home/Header';
 import Hero from '@/components/Home/Hero';
@@ -19,6 +20,8 @@ export default function Home() {
       <Projects />
       <Divider />
       <Experience />
+      <Divider />
+      <Education />
       <Divider />
       <ContactSection />
     </>

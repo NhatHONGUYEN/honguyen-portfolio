@@ -74,3 +74,16 @@ export type Experience = {
   };
   technologies?: string;
 };
+
+export type Education = {
+  id: number;
+  date: string;
+  title: {
+    fr: string;
+    en: string;
+  };
+  subtitle: {
+    fr: string;
+    en: string;
+  };
+};

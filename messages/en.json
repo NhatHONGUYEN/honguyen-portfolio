@@ -74,6 +74,9 @@
     "title": "Professional Experience",
     "technologies": "Technologies used"
   },
+  "education": {
+    "title": "Education"
+  },
   "metadata": {
     "title": "Nhat Portfolio",
     "description": "A simple portfolio website to showcase my projects and skills."
