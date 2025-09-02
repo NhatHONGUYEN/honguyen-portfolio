@@ -67,7 +67,6 @@ export const ContactForm = () => {
     }
   };
 
-  // Pas besoin de fonction de traduction, les messages d'erreur sont déjà complets
   const translateError = (error: { message?: string }) => {
     return error.message || '';
   };
@@ -77,58 +76,56 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="bg-background/50 max-w-lg mx-auto rounded-2xl shadow-sm border p-8 mb-16">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <FormFieldWithError
-            control={form.control}
-            name="name"
-            label={t('form.name')}
-            placeholder={t('form.namePlaceholder')}
-            translateError={translateError}
-          />
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 p-8">
+        <FormFieldWithError
+          control={form.control}
+          name="name"
+          label={t('form.name')}
+          placeholder={t('form.namePlaceholder')}
+          translateError={translateError}
+        />
 
-          <FormFieldWithError
-            control={form.control}
-            name="email"
-            label={t('form.email')}
-            placeholder={t('form.emailPlaceholder')}
-            type="email"
-            translateError={translateError}
-          />
+        <FormFieldWithError
+          control={form.control}
+          name="email"
+          label={t('form.email')}
+          placeholder={t('form.emailPlaceholder')}
+          type="email"
+          translateError={translateError}
+        />
 
-          <FormFieldWithError
-            control={form.control}
-            name="message"
-            label={t('form.message')}
-            placeholder={t('form.messagePlaceholder')}
-            isTextarea={true}
-            maxLength={500}
-            onChangeHandler={handleMessageChange}
-            translateError={translateError}
-          />
+        <FormFieldWithError
+          control={form.control}
+          name="message"
+          label={t('form.message')}
+          placeholder={t('form.messagePlaceholder')}
+          isTextarea={true}
+          maxLength={500}
+          onChangeHandler={handleMessageChange}
+          translateError={translateError}
+        />
 
-          <Button
-            type="submit"
-            className="w-full transition-transform"
-            disabled={isSubmitting}
-            size="lg"
-          >
-            {isSubmitting ? (
-              <div className="flex items-center gap-x-2">
-                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-                {t('form.submitting')}
-              </div>
-            ) : (
-              <div className="flex items-center gap-x-2">
-                <Send className="h-4 w-4" aria-hidden="true" />
-                {t('form.submit')}
-              </div>
-            )}
-          </Button>
-        </form>
-      </Form>
-    </div>
+        <Button
+          type="submit"
+          className="w-full transition-transform"
+          disabled={isSubmitting}
+          size="lg"
+        >
+          {isSubmitting ? (
+            <div className="flex items-center gap-x-2">
+              <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+              {t('form.submitting')}
+            </div>
+          ) : (
+            <div className="flex items-center gap-x-2">
+              <Send className="h-4 w-4" aria-hidden="true" />
+              {t('form.submit')}
+            </div>
+          )}
+        </Button>
+      </form>
+    </Form>
   );
 };
 
