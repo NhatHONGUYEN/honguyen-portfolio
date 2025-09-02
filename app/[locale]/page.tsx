@@ -17,13 +17,14 @@ export default function Home() {
       <Divider />
       <About />
       <Divider />
-      <Projects />
+      <Education />
       <Divider />
       <Experience />
       <Divider />
-      <Education />
+      <Projects />
       <Divider />
       <ContactSection />
+      <Divider />
     </>
   );
 }
