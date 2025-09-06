@@ -1,70 +1,34 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
-import { useParams, usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { Globe } from 'lucide-react';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { useParams, usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import { Button } from '@/components/ui/button';
 
 export default function LanguageSwitcher() {
   const pathname = usePathname();
   const { locale: pathLocale } = useParams() as { locale: string };
   const locale = useLocale() as 'fr' | 'en';
+  const router = useRouter();
 
-  // Fonction pour obtenir le nouveau chemin en changeant la locale
   const getPathWithNewLocale = (newLocale: string) => {
-    // Obtenir le chemin sans la locale
     const pathWithoutLocale = pathname.replace(`/${pathLocale}`, '');
     return `/${newLocale}${pathWithoutLocale}`;
   };
 
-  const languageLabels = {
-    fr: {
-      changeLanguage: 'Changer de langue',
-      french: 'Français',
-      english: 'Anglais',
-    },
-    en: {
-      changeLanguage: 'Change language',
-      french: 'French',
-      english: 'English',
-    },
+  const handleToggle = () => {
+    const newLocale = locale === 'fr' ? 'en' : 'fr';
+    router.push(getPathWithNewLocale(newLocale));
   };
 
   return (
-    <div className="relative">
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button
-            variant="outline"
-            size="icon"
-            className="transition-transform"
-          >
-            <Globe className="h-[1.2rem] w-[1.2rem]" />
-            <span className="sr-only">
-              {languageLabels[locale].changeLanguage}
-            </span>
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="cursor-pointer" align="end">
-          <DropdownMenuItem className="cursor-pointer" asChild>
-            <Link href={getPathWithNewLocale('fr')} locale="fr">
-              {languageLabels[locale].french}
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem className="cursor-pointer" asChild>
-            <Link href={getPathWithNewLocale('en')} locale="en">
-              {languageLabels[locale].english}
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={handleToggle}
+      className="flex items-center gap-2"
+      aria-label="Changer de langue"
+    >
+      <span className="font-medium uppercase">{locale}</span>
+    </Button>
   );
 }

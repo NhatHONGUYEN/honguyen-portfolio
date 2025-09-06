@@ -20,11 +20,15 @@ export default function MobileHeader() {
 
   return (
     <>
-      <HamburgerButton
-        isOpen={isMenuOpen}
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="lg:hidden"
-      />
+      {/* Mobile Header */}
+      <div className="flex items-center justify-between px-4 py-2 lg:hidden">
+        <HamburgerButton
+          isOpen={isMenuOpen}
+          aria-label="Toggle menu"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="w-10 h-10 p-0 flex items-center justify-center "
+        />
+      </div>
 
       {/* Mobile Menu Navigation */}
       <div

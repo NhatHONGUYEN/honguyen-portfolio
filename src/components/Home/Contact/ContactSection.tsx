@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
 export const ContactSection = () => {
   const t = useTranslations('contact');
@@ -39,6 +39,7 @@ export const ContactSection = () => {
       </div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent>
+          <DialogTitle>{t('email.title')}</DialogTitle>
           <ContactForm />
         </DialogContent>
       </Dialog>
