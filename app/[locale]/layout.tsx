@@ -9,6 +9,7 @@ import { routing } from '@/i18n/routing';
 import ClientWrapper from '../../src/lib/ClientWrapper';
 import Footer from '@/components/Home/Footer';
 import { Toaster } from '@/components/ui/sonner';
+import { ScreenSize } from '@/components/ScreenSize';
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body className={`${workSans.variable} antialiased `}>
+        <ScreenSize />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -83,7 +85,7 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <ClientWrapper messages={messages} locale={locale}>
-            <div className="relative z-10">
+            <div className="relative z-50">
               {children}
               <Footer />
               <ScrollToTopButton />

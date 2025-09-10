@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const ScreenSize = () => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -14,17 +14,17 @@ export const ScreenSize = () => {
     }
 
     updateDimensions();
-    window.addEventListener("resize", updateDimensions);
+    window.addEventListener('resize', updateDimensions);
 
     return () => {
-      window.removeEventListener("resize", updateDimensions);
+      window.removeEventListener('resize', updateDimensions);
     };
   }, []);
 
   const { width, height } = dimensions;
 
   return (
-    <div className="fixed bottom-5 right-5 flex items-center gap-2 rounded-full bg-black px-2.5 py-1 font-mono text-xs font-medium text-white">
+    <div className="fixed bottom-5 left-5 flex items-center gap-2 rounded-full bg-black px-2.5 py-1 font-mono text-xs font-medium text-white">
       <span>
         {width.toLocaleString()} x {height.toLocaleString()}
       </span>

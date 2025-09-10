@@ -37,22 +37,21 @@ export default function Hero() {
               alt="banner-img"
               width={1080}
               height={267}
-              className="w-full h-full object-cover rounded-t-2xl"
+              className="w-full h-full object-cover "
             />
           </div>
 
           {/* Avatar positionné absolument pour chevaucher */}
-          <div className="absolute top-1/2 left-4 sm:left-8 md:left-16 lg:left-52 transform -translate-y-1/2 lg:-translate-x-1/2 z-10">
+          <div className="absolute md:top-1/2 left-40 md:left-16 lg:left-52 transform -translate-y-1/2 lg:-translate-x-1/2 z-10">
             <div className="relative">
-              <Avatar className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 border-2 sm:border-4 border-white shadow-lg">
+              <Avatar className="w-40 h-40 border-4 border-white shadow-lg">
                 <AvatarImage
-                  src="/images/photo-profil.jpg"
+                  src="/images/Photo_profil.png"
                   alt="Nhat-Quan Ho Nguyen"
                   className="object-cover"
                 />
               </Avatar>
               {/* Indicateur en ligne avec design shadcn/ui */}
-              <div className="absolute bottom-1 right-2 sm:bottom-2 sm:right-4 lg:bottom-2 lg:right-6 w-3 h-3 sm:w-4 sm:h-4 bg-green-500 border-2 border-white rounded-full ring-2 ring-background" />
             </div>
           </div>
 
