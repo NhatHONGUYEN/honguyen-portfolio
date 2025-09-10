@@ -755,3 +755,18 @@ export const educationData: Education[] = [
     },
   },
 ];
+
+export const servicesBadge = [
+  'React Development',
+  'Next.js',
+  'Angular',
+  'Java',
+  'TypeScript',
+  'Node.js',
+  'API Development',
+  'Database Design',
+  'Responsive Design',
+  'Testing',
+  'Performance Optimization',
+  'UI/UX Implementation',
+];

@@ -1,23 +1,9 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import AboutStacks from './AboutStacks';
 
 export default function About() {
   const t = useTranslations('about');
-
-  const servicesBadge = [
-    'React Development',
-    'Next.js',
-    'Angular',
-    'Java',
-    'TypeScript',
-    'Node.js',
-    'API Development',
-    'Database Design',
-    'Responsive Design',
-    'Testing',
-    'Performance Optimization',
-    'UI/UX Implementation',
-  ];
 
   return (
     <section id="about">
@@ -38,23 +24,7 @@ export default function About() {
                 {t('paragraphs.second')}
               </h5>
             </div>
-            <div className="flex flex-col gap-4">
-              <p className="text-sm text-primary uppercase font-medium">
-                Compétences
-              </p>
-              <div className="flex flex-wrap gap-2 sm:gap-3">
-                {servicesBadge?.map((value, index) => (
-                  <div
-                    key={index}
-                    className="w-fit py-1.5 px-3 border border-primary/10 rounded-lg bg-background/50"
-                  >
-                    <p className="text-xs sm:text-sm font-medium text-primary">
-                      {value}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <AboutStacks />
           </div>
         </div>
       </div>
