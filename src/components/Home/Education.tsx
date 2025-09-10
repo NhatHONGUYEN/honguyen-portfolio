@@ -11,12 +11,10 @@ export default function Education() {
     <section id="education">
       <div className="container max-w-5xl mx-auto">
         <div className="border-x border-primary/10">
-          <div className="flex flex-col max-w-6xl mx-auto py-10 px-4 sm:px-7">
-            <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
-              <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
-                {t('title')}
-              </p>
-            </div>
+          <div className="flex flex-col max-w-3xl mx-auto px-4 sm:px-7 py-9 md:py-16">
+            <p className="text-sm tracking-[2px]  text-primary uppercase font-medium">
+              {t('title')}
+            </p>
           </div>
 
           <div className="border-t border-primary/10">

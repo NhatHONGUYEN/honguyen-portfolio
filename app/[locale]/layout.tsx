@@ -76,8 +76,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${workSans.variable} antialiased `}>
+      <body className={`${workSans.variable} antialiased bg-background`}>
         <ScreenSize />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
