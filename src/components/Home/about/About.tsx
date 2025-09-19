@@ -9,7 +9,7 @@ export default function About() {
     <section id="about">
       <div className="container mx-auto max-w-5xl">
         <div className="border-x border-primary/10">
-          <div className="flex flex-col gap-9 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
+          <div className="flex flex-col gap-9 sm:gap-12 max-w-3xl mx-auto px-4  py-11 md:py-20">
             <div className="flex flex-col gap-4">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
                 {t('badge')}

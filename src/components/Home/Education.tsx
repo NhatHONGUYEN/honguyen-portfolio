@@ -12,14 +12,14 @@ export default function Education() {
       <div className="container max-w-5xl mx-auto">
         <div className="border-x border-primary/10">
           <div className="flex flex-col max-w-3xl mx-auto px-4 sm:px-7 py-9 md:py-16">
-            <p className="text-sm tracking-[2px]  text-primary uppercase font-medium">
+            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
               {t('title')}
             </p>
           </div>
 
           <div className="border-t border-primary/10">
-            <div className="relative max-w-3xl mx-auto px-4 sm:px-0 py-10">
-              <div className="hidden sm:flex absolute left-5 sm:left-[15.9rem] sm:translate-x-1/2 top-0 bottom-0 w-px bg-primary/10" />
+            <div className="relative max-w-4xl  px-4 sm:px-0 py-10">
+              <div className="hidden sm:flex absolute left-5 sm:left-[17.9rem] sm:translate-x-1/2 top-0 bottom-0 w-px bg-primary/10" />
 
               <div className="relative">
                 {educationData?.map((item, index) => (
@@ -29,7 +29,7 @@ export default function Education() {
                       index !== educationData.length - 1 ? 'mb-8 sm:mb-16' : ''
                     }`}
                   >
-                    <div className="relative pl-8 sm:pl-0 sm:w-64 sm:text-right sm:pr-16">
+                    <div className="relative pl-8  sm:pl-[9.5rem] sm:w-72">
                       <p className="ml-2.5 sm:ml-0 text-base font-normal sm:mb-0 leading-relaxed">
                         {item.date}
                       </p>

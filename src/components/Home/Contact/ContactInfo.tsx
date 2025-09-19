@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 type ContactInfoProps = {
@@ -28,14 +29,14 @@ export const ContactInfo = ({
           {contactValue}
         </button>
       ) : link ? (
-        <a
+        <Link
           href={link}
           target="_blank"
           rel="noopener noreferrer"
           className="underline text-sm hover:text-primary"
         >
           {contactValue}
-        </a>
+        </Link>
       ) : (
         <span className="text-sm">{contactValue}</span>
       )}

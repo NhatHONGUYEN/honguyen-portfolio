@@ -31,7 +31,6 @@ export const ContactSection = () => {
               <ContactInfo
                 title={t('phone.title')}
                 contactValue="+33 7 69 57 74 67"
-                link="tel:+33769577467"
               />
             </div>
           </div>
