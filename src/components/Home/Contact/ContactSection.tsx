@@ -16,7 +16,7 @@ export const ContactSection = () => {
         <div className="border-x border-primary/10">
           <div className="flex flex-col gap-8 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
             <div className="flex flex-col gap-2 text-left">
-              <h2 className="font-semibold tracking-tight text-3xl lg:text-4xl">
+              <h2 className=" tracking-tight text-3xl lg:text-4xl">
                 {t('title')}
               </h2>
               <p className="mt-2 text-muted-foreground">{t('subtitle')}</p>

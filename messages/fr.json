@@ -17,6 +17,7 @@
   "about": {
     "badge": "À Propos de Moi",
     "title": "chez Tkorp, jusqu'en février 2026.",
+    "skills": "Compétences",
     "paragraphs": {
       "first": "Salut ! Je suis Nhat-Quan — développeur web autodidacte. Actuellement stagiaire ",
       "second": "Anciennement intermittent du spectacle et vendeur chez Lacoste, j'apporte de solides compétences en gestion de projet et en communication au développement."
@@ -58,7 +59,7 @@
   },
   "contact": {
     "title": "Contactez-moi",
-    "subtitle": "Je recherche activement une alternance en développement web. N'hésitez pas à me contacter si vous avez des opportunités à me proposer.",
+    "subtitle": "Orienté solutions et adaptable, je souhaite contribuer au succès d’une start-up.",
     "email": {
       "title": "Email",
       "description": "Je serai ravi de recevoir vos propositions d'alternance."

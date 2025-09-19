@@ -17,6 +17,7 @@
   "about": {
     "badge": "About Me",
     "title": "at Tkorp, until February 2026.",
+    "skills": "Skills",
     "paragraphs": {
       "first": "Hey there. I'm Nhat-Quan — self-taught web developer. Currently intern ",
       "second": "Previously worked as a live performance technician and sales associate at Lacoste, bringing strong project management and communication skills to development."
@@ -41,7 +42,7 @@
   },
   "contact": {
     "title": "Contact Me",
-    "subtitle": "I am actively looking for an apprenticeship in web development. Feel free to contact me if you have any opportunities to offer.",
+    "subtitle": "Solution-oriented and adaptable, I am eager to contribute to the success of a start-up.",
     "email": {
       "title": "Email",
       "description": "I would be delighted to receive your apprenticeship proposals."

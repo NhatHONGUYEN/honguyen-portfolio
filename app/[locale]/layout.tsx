@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/Theme/theme-provider';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
+
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -10,6 +10,7 @@ import ClientWrapper from '../../src/lib/ClientWrapper';
 import Footer from '@/components/Home/Footer';
 import { Toaster } from '@/components/ui/sonner';
 import { ScreenSize } from '@/components/ScreenSize';
+import ScrollToTopButton from '@/components/ui/buttons/ScrollToTopButton';
 
 const workSans = Work_Sans({
   subsets: ['latin'],
