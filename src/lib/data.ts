@@ -36,32 +36,11 @@ export const projects: Project[] = [
     },
     title: 'DocBoard',
     description: {
-      fr: "Une plateforme complète pour la prise de rendez-vous entre patients et médecins, dotée d'un tableau de bord intuitif. Gérez vos rendez-vous, consultez votre historique médical et restez connecté avec vos professionnels de santé sans effort.",
-      en: 'A comprehensive platform for scheduling appointments between patients and doctors, featuring an intuitive dashboard. Manage your appointments, check your medical history, and stay connected with your healthcare professionals effortlessly.',
+      fr: 'Plateforme intuitive pour prendre rendez-vous et gérer son suivi médical en ligne.',
+      en: 'Intuitive platform for booking appointments and managing medical follow-up online.',
     },
     image: '/images/projects/DocBoard - Medical Dashboard.png',
     href: 'https://doc-board.vercel.app/',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'Prisma',
-      'PostgreSQL',
-      'NextAuth.js',
-      'Twilio',
-    ],
-    learnings: {
-      fr: "Ce projet m'a initié au développement d'applications sensibles avec gestion des données médicales. J'ai appris l'importance de la sécurité, de l'authentification robuste avec NextAuth.js, et l'intégration d'APIs de notification SMS avec Twilio pour les rappels de rendez-vous.",
-      en: 'This project introduced me to developing sensitive applications with medical data management. I learned the importance of security, robust authentication with NextAuth.js, and SMS notification API integration with Twilio for appointment reminders.',
-    },
-    motivation: {
-      fr: "Ayant vécu des difficultés pour prendre rendez-vous médicaux, je voulais créer une solution qui simplifie cette démarche. L'objectif était de créer un pont numérique entre patients et professionnels de santé, tout en respectant la confidentialité des données.",
-      en: 'Having experienced difficulties making medical appointments, I wanted to create a solution that simplifies this process. The goal was to create a digital bridge between patients and healthcare professionals, while respecting data confidentiality.',
-    },
-    challenges: {
-      fr: "La sécurité des données médicales a été le défi majeur, nécessitant une compréhension approfondie du RGPD et des bonnes pratiques de chiffrement. L'intégration de Twilio pour les SMS de rappel a posé des problèmes de fiabilité et de gestion des fuseaux horaires. La conception d'une interface accessible pour tous les âges (patients âgés) tout en restant moderne a demandé plusieurs itérations UX/UI.",
-      en: 'Medical data security was the major challenge, requiring deep understanding of GDPR and encryption best practices. Twilio integration for SMS reminders posed reliability issues and timezone management problems. Designing an accessible interface for all ages (elderly patients) while staying modern required several UX/UI iterations.',
-    },
     github: 'https://github.com/NhatHONGUYEN/doc-board',
   },
 
@@ -77,32 +56,12 @@ export const projects: Project[] = [
     },
     title: 'Mocou',
     description: {
-      fr: 'Une plateforme ludique et interactive pour apprendre le coréen avec le personnage adorable Pochacco. Explorez les leçons, pratiquez des exercices et suivez votre progression alors que Pochacco vous guide dans votre apprentissage du coréen.',
-      en: 'A fun and interactive platform for learning Korean with the adorable Pochacco character. Explore lessons, practice exercises, and track your progress as Pochacco guides you through your Korean learning journey.',
+      fr: 'Application ludique pour apprendre le coréen avec Pochacco.',
+      en: 'Fun app for learning Korean with Pochacco.',
     },
     image:
       'https://res.cloudinary.com/nhatflux/image/upload/f_webp/cznrzf6wnnixp9vcvnen',
     href: 'https://mocou.vercel.app/',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'Framer Motion',
-      'Zustand',
-      'Cloudinary',
-    ],
-    learnings: {
-      fr: "Ce projet m'a permis d'explorer la gamification dans l'apprentissage et les animations avancées avec Framer Motion. J'ai appris à créer une expérience utilisateur engageante avec un système de progression, des badges, et une mascotte interactive qui guide l'utilisateur.",
-      en: 'This project allowed me to explore gamification in learning and advanced animations with Framer Motion. I learned to create an engaging user experience with a progression system, badges, and an interactive mascot that guides the user.',
-    },
-    motivation: {
-      fr: "Passionné par la culture coréenne et l'apprentissage des langues, je voulais créer une expérience d'apprentissage différente, plus ludique et moins intimidante. Pochacco apporte cette dimension kawaii qui rend l'apprentissage du coréen plus accessible et amusant.",
-      en: 'Passionate about Korean culture and language learning, I wanted to create a different learning experience, more playful and less intimidating. Pochacco brings this kawaii dimension that makes learning Korean more accessible and fun.',
-    },
-    challenges: {
-      fr: "La création d'un système de gamification équilibré a été complexe : il fallait motiver sans frustrer. Les animations avec Framer Motion ont causé des problèmes de performance sur mobile, nécessitant une optimisation poussée. La gestion des caractères coréens (Hangul) dans les formulaires et la validation des réponses ont demandé une recherche approfondie sur l'encodage UTF-8 et les spécificités linguistiques.",
-      en: 'Creating a balanced gamification system was complex: it needed to motivate without frustrating. Framer Motion animations caused performance issues on mobile, requiring extensive optimization. Managing Korean characters (Hangul) in forms and answer validation required deep research on UTF-8 encoding and linguistic specificities.',
-    },
     github: 'https://github.com/NhatHONGUYEN/Mocou',
   },
 
@@ -118,31 +77,11 @@ export const projects: Project[] = [
     },
     title: 'NhatBlog',
     description: {
-      fr: "Mon journal intime de développeur où je partage mes expériences, mes conseils et mes apprentissages dans le monde du développement web. Un espace personnel pour documenter mon parcours et aider d'autres développeurs dans leur transition.",
-      en: 'My developer diary where I share my experiences, tips, and learnings in the world of web development. A personal space to document my journey and help other developers in their transition.',
+      fr: 'Blog personnel pour partager mon parcours et mes conseils de développeur.',
+      en: 'Personal blog to share my journey and developer tips.',
     },
     image: '/images/projects/blog.webp',
     href: 'https://nhathnblog.vercel.app/',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'MDX',
-      'Contentlayer',
-      'Vercel',
-    ],
-    learnings: {
-      fr: "Ce projet m'a initié au développement de blogs avec du contenu statique. J'ai appris à utiliser MDX pour écrire du contenu riche, Contentlayer pour la gestion des articles, et à optimiser le SEO. C'était aussi l'occasion de travailler sur le design et la typographie.",
-      en: 'This project introduced me to blog development with static content. I learned to use MDX for rich content writing, Contentlayer for article management, and SEO optimization. It was also an opportunity to work on design and typography.',
-    },
-    motivation: {
-      fr: "Voulant documenter mon parcours de reconversion, j'ai créé ce blog pour partager mes apprentissages et aider d'autres personnes dans la même situation. C'est devenu mon espace de réflexion et de partage avec la communauté dev.",
-      en: 'Wanting to document my career transition journey, I created this blog to share my learnings and help others in the same situation. It became my space for reflection and sharing with the dev community.',
-    },
-    challenges: {
-      fr: "La configuration de Contentlayer avec Next.js 13+ et le nouveau App Router a été laborieuse, avec peu de documentation disponible à l'époque. L'optimisation SEO pour un blog statique nécessitait une compréhension fine des métadonnées et du sitemap. La création d'un système de tags et de catégories dynamique tout en gardant les performances optimales a demandé plusieurs refactorisations.",
-      en: 'Configuring Contentlayer with Next.js 13+ and the new App Router was laborious, with little documentation available at the time. SEO optimization for a static blog required fine understanding of metadata and sitemap. Creating a dynamic tag and category system while maintaining optimal performance required several refactorings.',
-    },
     github: 'https://github.com/NhatHONGUYEN/mdxblog',
   },
 ];

@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { projects } from '@/lib/data';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowUpRight } from 'lucide-react';
@@ -60,12 +59,18 @@ export default function Projects() {
                           {project.description[locale]}
                         </p>
                       </div>
-                      <Link
-                        href={`/${locale}/project/${project.id}`}
+                      <a
+                        href={
+                          typeof project.github === 'string'
+                            ? project.github
+                            : project.github?.[locale] || '#'
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex-shrink-0 p-2 rounded-full border border-primary/10 hover:bg-primary/10 transition-colors duration-300"
                       >
                         <ArrowUpRight className="w-4 h-4 text-primary" />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

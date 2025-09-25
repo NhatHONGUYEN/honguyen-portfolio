@@ -61,8 +61,7 @@
     "title": "Contactez-moi",
     "subtitle": "Orienté solutions et adaptable, je souhaite contribuer au succès d’une start-up.",
     "email": {
-      "title": "Email",
-      "description": "Je serai ravi de recevoir vos propositions d'alternance."
+      "title": "Email"
     },
     "phone": {
       "title": "Téléphone",
@@ -86,7 +85,8 @@
     }
   },
   "ui": {
-    "scrollToTop": "Retour en haut"
+    "scrollToTop": "Retour en haut",
+    "getInTouch": "Me contacter"
   },
   "experience": {
     "title": "Expériences Professionnelles",
