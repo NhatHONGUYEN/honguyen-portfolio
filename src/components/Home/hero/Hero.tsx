@@ -6,7 +6,7 @@ import HeroImageProfil from './HeroImageProfil';
 export default function Hero() {
   return (
     <section>
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl bg-background">
         <div className="relative">
           <HeroBanner />
           <HeroImageProfil />

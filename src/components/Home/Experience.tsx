@@ -10,7 +10,7 @@ export default function Experience() {
 
   return (
     <section id="experience">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl bg-background">
         <div className="border-x border-primary/10">
           <div className="flex flex-col max-w-3xl mx-auto px-4 sm:px-7 py-9 md:py-16">
             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">

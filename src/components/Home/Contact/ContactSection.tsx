@@ -12,7 +12,7 @@ export const ContactSection = () => {
 
   return (
     <section id="contact">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl bg-background">
         <div className="border-x border-primary/10">
           <div className="flex flex-col gap-8 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
             <div className="flex flex-col gap-2 text-left">

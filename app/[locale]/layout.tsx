@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@/components/Theme/theme-provider';
-
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -77,24 +75,16 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${workSans.variable} antialiased bg-background`}>
+      <body className={`${workSans.variable} antialiased bg-muted `}>
         <ScreenSize />
-
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <ClientWrapper messages={messages} locale={locale}>
-            <div className="relative z-50">
-              {children}
-              <Footer />
-              <ScrollToTopButton />
-            </div>
-          </ClientWrapper>
-          <Toaster position="top-right" />
-        </ThemeProvider>
+        <ClientWrapper messages={messages} locale={locale}>
+          <div className="relative z-50">
+            {children}
+            <Footer />
+            <ScrollToTopButton />
+          </div>
+        </ClientWrapper>
+        <Toaster position="top-right" />
       </body>
     </html>
   );

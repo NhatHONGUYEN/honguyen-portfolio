@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl bg-background">
         <div className="border-x border-primary/10">
           <div className="flex flex-col max-w-3xl mx-auto gap-10 sm:gap-16 px-4 sm:px-7 py-11 md:py-20">
             {/* Header */}

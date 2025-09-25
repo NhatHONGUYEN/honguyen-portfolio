@@ -9,7 +9,7 @@ export default function Education() {
 
   return (
     <section id="education">
-      <div className="container max-w-5xl mx-auto">
+      <div className="container max-w-5xl mx-auto bg-background">
         <div className="border-x border-primary/10">
           <div className="flex flex-col max-w-3xl mx-auto px-4 sm:px-7 py-9 md:py-16">
             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
