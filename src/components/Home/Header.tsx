@@ -6,7 +6,6 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
-import { ModeToggle } from '@/components/Theme/ModeToggle';
 import Link from 'next/link';
 
 import { useTranslations } from 'next-intl';
@@ -49,7 +48,6 @@ export default function Header() {
         <div className="flex items-center gap-2.5">
           <div className="hidden lg:flex items-center gap-2">
             <LanguageSwitcher />
-            <ModeToggle />
           </div>
           <MobileHeader />
         </div>

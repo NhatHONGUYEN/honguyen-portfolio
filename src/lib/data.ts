@@ -3,13 +3,7 @@ import {
   InstagramIcon,
   TwitterIcon,
 } from '../components/SocialIcons';
-import {
-  IconsItem,
-  NavigationItem,
-  Project,
-  Experience,
-  Education,
-} from './type';
+import { NavigationItem, Project, Experience, Education } from './type';
 
 export const navigation: NavigationItem[] = [
   {
@@ -239,59 +233,6 @@ export const experiences: Experience[] = [
         'Teamwork to achieve sales objectives and ensure proper store management',
       ],
     },
-  },
-];
-
-export const IconsList: IconsItem[] = [
-  {
-    key: 1,
-    src: 'https://angular.io/assets/images/logos/angular/angular.svg',
-    alt: 'Angular',
-  },
-  {
-    key: 2,
-    src: 'https://www.vectorlogo.zone/logos/java/java-icon.svg',
-    alt: 'Java',
-  },
-  {
-    key: 3,
-    src: 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg',
-    alt: 'Docker',
-  },
-  {
-    key: 4,
-    src: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
-    alt: 'Spring Boot',
-  },
-  {
-    key: 5,
-    src: 'https://www.postgresql.org/media/img/about/press/elephant.png',
-    alt: 'PostgreSQL',
-  },
-  {
-    key: 6,
-    src: 'https://shadcnblocks.com/images/block/logos/typescript-icon.svg',
-    alt: 'TypeScript',
-  },
-  {
-    key: 7,
-    src: '/images/NextJs.png',
-    alt: 'Next.js',
-  },
-  {
-    key: 8,
-    src: 'https://shadcnblocks.com/images/block/logos/tailwind-icon.svg',
-    alt: 'Tailwind CSS',
-  },
-  {
-    key: 9,
-    src: 'https://shadcnblocks.com/images/block/logos/github-icon.svg',
-    alt: 'GitHub',
-  },
-  {
-    key: 10,
-    src: '/images/projects/zustand.svg',
-    alt: 'Zustand',
   },
 ];
 

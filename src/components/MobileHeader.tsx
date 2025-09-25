@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { HamburgerButton } from '@/components/ui/hamburger-button';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './Theme/LanguageSwitcher';
-import { ModeToggle } from './Theme/ModeToggle';
 
 export default function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +52,6 @@ export default function MobileHeader() {
             </Link>
           ))}
           <div className="flex items-center gap-4 py-4 border-t border-border mt-4">
-            <ModeToggle />
             <LanguageSwitcher />
           </div>
         </nav>
