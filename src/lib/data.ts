@@ -27,6 +27,46 @@ export const projects: Project[] = [
   {
     id: 1,
     date: {
+      fr: 'Avril, 2025',
+      en: 'April, 2025',
+    },
+    category: {
+      fr: 'Sport',
+      en: 'Sport',
+    },
+    title: 'CoachLeague',
+    description: {
+      fr: "Une plateforme d'abonnement pour salle de sport avec un tableau de bord intuitif. Les utilisateurs peuvent gérer leurs abonnements, suivre leurs progrès et interagir avec Coach Max, un bot intelligent qui offre des conseils personnalisés et des programmes d'entraînement adaptés.",
+      en: 'A gym membership platform with an intuitive dashboard. Users can manage their subscriptions, track their progress, and interact with Coach Max, an intelligent bot that provides personalized advice and tailored workout programs.',
+    },
+    image: '/images/projects/HeroCoach.jpg',
+    href: 'https://coach-sportif.vercel.app/',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Prisma',
+      'PostgreSQL',
+      'Stripe',
+      'OpenAI API',
+    ],
+    learnings: {
+      fr: "Ce projet m'a permis d'approfondir l'intégration de l'IA conversationnelle avec OpenAI, la gestion des paiements avec Stripe, et la création d'un système d'abonnement complet. J'ai aussi travaillé sur l'UX/UI pour rendre l'expérience utilisateur fluide et engageante.",
+      en: 'This project allowed me to deepen conversational AI integration with OpenAI, payment management with Stripe, and creating a complete subscription system. I also worked on UX/UI to make the user experience smooth and engaging.',
+    },
+    motivation: {
+      fr: "Passionné de sport, je voulais créer une plateforme qui combine technologie et fitness. L'idée d'un coach virtuel intelligent qui s'adapte aux besoins de chaque utilisateur m'a motivé à explorer l'IA conversationnelle et les systèmes d'abonnement.",
+      en: "Passionate about sports, I wanted to create a platform that combines technology and fitness. The idea of an intelligent virtual coach that adapts to each user's needs motivated me to explore conversational AI and subscription systems.",
+    },
+    challenges: {
+      fr: "L'intégration de l'API OpenAI a été complexe, notamment pour gérer les coûts et optimiser les prompts pour obtenir des conseils sportifs pertinents. La gestion des webhooks Stripe pour les abonnements récurrents m'a posé des difficultés, surtout pour gérer les échecs de paiement et les annulations. L'optimisation des performances avec Prisma pour les requêtes complexes (utilisateurs + abonnements + historique) a nécessité plusieurs refactorisations.",
+      en: 'Integrating the OpenAI API was complex, especially managing costs and optimizing prompts to get relevant sports advice. Managing Stripe webhooks for recurring subscriptions was challenging, especially handling payment failures and cancellations. Performance optimization with Prisma for complex queries (users + subscriptions + history) required several refactorings.',
+    },
+    github: 'https://github.com/NhatHONGUYEN/coach-sportif',
+  },
+  {
+    id: 2,
+    date: {
       fr: 'Mars, 2025',
       en: 'March, 2025',
     },
@@ -43,9 +83,8 @@ export const projects: Project[] = [
     href: 'https://doc-board.vercel.app/',
     github: 'https://github.com/NhatHONGUYEN/doc-board',
   },
-
   {
-    id: 2,
+    id: 3,
     date: {
       fr: 'Mars, 2025',
       en: 'March, 2025',
@@ -64,9 +103,8 @@ export const projects: Project[] = [
     href: 'https://mocou.vercel.app/',
     github: 'https://github.com/NhatHONGUYEN/Mocou',
   },
-
   {
-    id: 3,
+    id: 4,
     date: {
       fr: 'Février, 2025',
       en: 'February, 2025',
