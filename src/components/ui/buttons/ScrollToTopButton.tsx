@@ -34,7 +34,7 @@ export default function ScrollToTopButton() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed left-16 sm:left-auto  bottom-4 sm:right-4">
       <Button onClick={scrollToTop} size="lg" className="group rounded-full  ">
         <ArrowUp className="mr-2 h-4 w-4" aria-hidden="true" />
         {t('scrollToTop')}
