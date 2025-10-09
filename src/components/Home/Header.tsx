@@ -26,7 +26,7 @@ export default function Header() {
     <section className="fixed mt-10 left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-full border bg-background/70 backdrop-blur-md">
       <div className="flex items-center justify-between px-6 py-3">
         {/* Remplace le logo par l'icône Home */}
-        <Link href="/" className="text-muted-foreground text-lg">
+        <Link href="#hero" className="text-muted-foreground text-lg">
           Nhat
         </Link>
         {/* Desktop Navigation */}
