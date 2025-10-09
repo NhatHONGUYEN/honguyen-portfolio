@@ -26,7 +26,7 @@ export default function HeroActionContact() {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center lg:items-end xl:items-center justify-center lg:justify-end gap-4 mt-6 lg:mt-0">
+    <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center lg:items-end xl:items-center justify-center lg:justify-end gap-4 mt-6 lg:mt-0 lg:pr-16">
       <div className="flex items-center gap-2 sm:gap-3">
         {socialIcons?.map((social, index) => {
           const IconComponent = social.component;

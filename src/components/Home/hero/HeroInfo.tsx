@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 export default function HeroInfo() {
   const t = useTranslations('hero');
   return (
-    <div className="flex flex-col gap-2 sm:gap-3 text-center lg:text-left mt-12 sm:mt-8 lg:mt-0">
+    <div className="flex flex-col pl-2 gap-2 sm:gap-3 text-center lg:text-left mt-12 sm:mt-8 lg:mt-0">
       <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
         Nhat-Quan Ho Nguyen
       </h1>
