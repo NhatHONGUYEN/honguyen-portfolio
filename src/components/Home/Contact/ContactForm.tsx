@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { toast } from 'sonner';
 import { Loader2, Send } from 'lucide-react';
-
 import { Button } from '@/components/ui/button';
 import { Form } from '@/components/ui/form';
 import FormFieldWithError from './FormFieldWithError';
