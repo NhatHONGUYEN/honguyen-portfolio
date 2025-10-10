@@ -1,5 +1,4 @@
 import About from '@/components/Home/about/About';
-import ContactSection from '@/components/Home/contact/ContactSection';
 import Divider from '@/components/Home/Divider';
 import Education from '@/components/Home/Education';
 import Experience from '@/components/Home/Experience';
@@ -22,7 +21,7 @@ export default function Home() {
       <Divider />
       <Projects />
       <Divider />
-      <ContactSection />
+
       <Divider />
     </>
   );
