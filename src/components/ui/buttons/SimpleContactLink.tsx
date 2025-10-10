@@ -5,7 +5,7 @@ export default function SimpleContactLink() {
   const t = useTranslations('ui');
   return (
     <Link
-      href="#contact"
+      href="contact"
       className="inline-block rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
     >
       <span className="flex items-center gap-2 sm:gap-3 py-2 sm:py-2.5 px-4 sm:px-5 rounded-full">
