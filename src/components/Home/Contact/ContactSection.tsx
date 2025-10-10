@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
-export const ContactSection = () => {
+export default function ContactSection() {
   const t = useTranslations('contact');
   const [open, setOpen] = useState(false);
 
@@ -44,6 +44,4 @@ export const ContactSection = () => {
       </Dialog>
     </section>
   );
-};
-
-export default ContactSection;
+}
