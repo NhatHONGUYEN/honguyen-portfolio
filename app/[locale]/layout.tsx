@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     siteName: 'Nhat Portfolio',
     images: [
       {
-        url: 'https://myfinalportfolio-five.vercel.app/images/projects/photo-profil.webp',
+        url: 'https://myfinalportfolio-five.vercel.app/images/Photo_profil.png',
         width: 1200,
         height: 630,
         alt: 'Nhat Portfolio - A simple portfolio website',
       },
     ],
-    locale: 'en_US',
     type: 'website',
+    locale: 'fr_FR',
   },
   twitter: {
     card: 'summary_large_image',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       'A simple portfolio website to present my projects and skills.',
     images: [
       {
-        url: 'https://myfinalportfolio-five.vercel.app/images/projects/photo-profil.webp',
+        url: 'https://myfinalportfolio-five.vercel.app/images/Photo_profil.png',
         alt: 'Nhat Portfolio - A simple portfolio website',
       },
     ],
