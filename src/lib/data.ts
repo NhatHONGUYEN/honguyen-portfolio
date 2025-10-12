@@ -241,7 +241,7 @@ export const educationData: Education[] = [
 ];
 
 export const servicesBadge = [
-  'React Development',
+  'React',
   'Next.js',
   'NestJS',
   'TypeScript',
@@ -249,9 +249,8 @@ export const servicesBadge = [
   'GraphQL',
   'Apollo',
   'Jest',
-  'DBeaver',
   'Postman',
-  'Motion',
+  'Docker',
   'Zustand',
   'TanStack Query',
   'Tailwind CSS',
