@@ -16,12 +16,15 @@
   },
   "about": {
     "badge": "About Me",
-    "title": "at Tkorp, until February 2026.",
+    "title": "Self-taught web developer.",
     "skills": "Skills",
     "paragraphs": {
-      "first": "Hey there. I'm Nhat-Quan — self-taught web developer. Currently intern ",
-      "second": "Previously worked as a live performance technician and sales associate at Lacoste, bringing strong project management and communication skills to development."
-    }
+      "first": "Hi! I'm Nhat-Quan — a trained web developer. ",
+      "second": "I am currently looking for a work-study position with Ironhack starting in November 2025. The program lasts 13 months, with a schedule of 4 days in the company and 1 day of training per week."
+    },
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools"
   },
   "techStack": {
     "title": "My Technical Ecosystem",
@@ -96,7 +99,7 @@
     "repositories": "Repositories",
     "frontend": "Frontend",
     "backend": "Backend",
-    "config": "Configuration",
+    "tools": "Tools",
     "mobile": "Mobile"
   }
 }

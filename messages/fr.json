@@ -16,12 +16,15 @@
   },
   "about": {
     "badge": "À Propos de Moi",
-    "title": "chez Tkorp, jusqu'en février 2026.",
+    "title": "en autodidacte.",
     "skills": "Compétences",
     "paragraphs": {
-      "first": "Salut ! Je suis Nhat-Quan — développeur web autodidacte. Actuellement stagiaire ",
-      "second": "Anciennement intermittent du spectacle et vendeur chez Lacoste, j'apporte de solides compétences en gestion de projet et en communication au développement."
-    }
+      "first": "Salut ! Je suis Nhat-Quan — développeur web formé  ",
+      "second": "Actuellement, je cherche une alternance en entreprise avec l'école Ironhack à partir de novembre 2025. La formation dure 13 mois, avec un rythme de 4 jours en entreprise et 1 jour en formation par semaine."
+    },
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Outils"
   },
   "techStack": {
     "title": "Mon écosystème technique",
