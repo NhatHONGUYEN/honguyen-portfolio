@@ -218,7 +218,7 @@ export const educationData: Education[] = [
     id: 1,
     date: '2024',
     title: {
-      fr: "RCNP Niv. 6 (Bac+4) : Concepteur-développeur d'applications web et mobile",
+      fr: "RNCP Niv. 6 (Bac+4) : Concepteur-développeur d'applications web et mobile",
       en: 'RNCP Level 6 (Bachelor+4): Web and Mobile Application Designer-Developer',
     },
     subtitle: {
