@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Nhat Portfolio',
     images: [
       {
-        url: 'https://honguyen-portfolio.vercel.app/images/Photo_profil.png',
+        url: 'https://honguyen-portfolio.vercel.app/images/Background_metadata.jpg',
         width: 1200,
         height: 630,
         alt: 'Nhat Portfolio - A simple portfolio website',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       'A simple portfolio website to present my projects and skills.',
     images: [
       {
-        url: 'https://honguyen-portfolio.vercel.app/images/Photo_profil.png',
+        url: 'https://honguyen-portfolio.vercel.app/images/Background_metadata.jpg',
         alt: 'Nhat Portfolio - A simple portfolio website',
       },
     ],

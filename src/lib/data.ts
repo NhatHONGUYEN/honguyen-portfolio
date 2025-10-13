@@ -174,12 +174,12 @@ export const experiences: Experience[] = [
     location: 'Paris',
     bulletPoints: {
       fr: [
-        "RCNP Niv. 6 (Bac+4) : Concepteur-développeur d'applications web et mobile",
+        "RNCP Niv. 6 (Bac+4) : Concepteur-développeur d'applications web et mobile",
         'Formation intensive en développement web full-stack',
         'Apprentissage de React, Next.js, Node.js et bases de données',
       ],
       en: [
-        'RCNP Level 6 (Bachelor+4): Web and mobile application designer-developer',
+        'RNCP Level 6 (Bachelor+4): Web and mobile application designer-developer',
         'Intensive full-stack web development training',
         'Learning React, Next.js, Node.js and databases',
       ],
