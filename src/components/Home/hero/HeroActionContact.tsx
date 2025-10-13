@@ -1,8 +1,4 @@
-import {
-  GitHubIcon,
-  InstagramIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons';
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons';
 import CvDownloadButton from '@/components/ui/buttons/CvDownloadButton';
 import SimpleContactLink from '@/components/ui/buttons/SimpleContactLink';
 import Link from 'next/link';
@@ -10,15 +6,11 @@ import Link from 'next/link';
 export default function HeroActionContact() {
   const socialIcons = [
     {
-      href: 'https://twitter.com',
-      icon: 'twitter',
-      component: TwitterIcon,
+      href: 'https://www.linkedin.com/in/nhat-quan-ho-nguyen/',
+      icon: 'linkedin',
+      component: LinkedInIcon,
     },
-    {
-      href: 'https://instagram.com',
-      icon: 'instagram',
-      component: InstagramIcon,
-    },
+
     {
       href: 'https://github.com/NhatHONGUYEN',
       icon: 'github',

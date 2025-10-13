@@ -1,22 +1,14 @@
-import {
-  GitHubIcon,
-  InstagramIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons';
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons';
 import Link from 'next/link';
 
 export default function Footer() {
   const socialIcons = [
     {
-      href: 'https://twitter.com/Nhatflix_',
-      icon: 'twitter',
-      component: TwitterIcon,
+      href: 'https://www.linkedin.com/in/nhat-quan-ho-nguyen/',
+      icon: 'linkedin',
+      component: LinkedInIcon,
     },
-    {
-      href: 'https://www.instagram.com/hnnq.dev/',
-      icon: 'instagram',
-      component: InstagramIcon,
-    },
+
     {
       href: 'https://github.com/NhatHONGUYEN',
       icon: 'github',

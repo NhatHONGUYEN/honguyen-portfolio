@@ -1,25 +1,16 @@
-import {
-  GitHubIcon,
-  InstagramIcon,
-  TwitterIcon,
-} from '../components/SocialIcons';
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons';
 import { NavigationItem, Project, Experience, Education } from './type';
 
 export const navigation: NavigationItem[] = [
   {
-    name: 'Instagram',
-    href: 'https://www.instagram.com/hnnq.dev/',
-    icon: InstagramIcon,
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/nhat-quan-ho-nguyen/',
+    icon: LinkedInIcon,
   },
   {
     name: 'GitHub',
     href: 'https://github.com/NhatHONGUYEN',
     icon: GitHubIcon,
-  },
-  {
-    name: 'Twitter',
-    href: 'https://x.com/Nhatflix_',
-    icon: TwitterIcon,
   },
 ];
 
