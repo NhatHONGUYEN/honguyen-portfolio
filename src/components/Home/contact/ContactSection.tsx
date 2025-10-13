@@ -25,7 +25,7 @@ export default function ContactSection() {
             <div className="flex flex-col gap-4">
               <ContactInfo
                 title={t('email.title')}
-                contactValue="hnnhat67@gmail.com"
+                contactValue="contact@nhatnguyen.dev"
                 onClick={() => setOpen(true)}
                 isButton
               />
