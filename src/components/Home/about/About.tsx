@@ -20,7 +20,7 @@ export default function About() {
                   {t('title')}
                 </span>
               </h2>
-              <h5 className="text-secondary-foreground font-normal">
+              <h5 className="text-muted-foreground font-normal ">
                 {t('paragraphs.second')}
               </h5>
             </div>

@@ -169,8 +169,8 @@ export const experiences: Experience[] = [
       fr: 'La Capsule PARIS',
       en: 'La Capsule PARIS',
     },
-    startYear: '2024',
-    endYear: '2024',
+    startYear: '09/2024',
+    endYear: '11/2024',
     location: 'Paris',
     bulletPoints: {
       fr: [
