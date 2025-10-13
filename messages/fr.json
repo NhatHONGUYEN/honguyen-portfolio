@@ -16,11 +16,11 @@
   },
   "about": {
     "badge": "À Propos de Moi",
-    "title": "en autodidacte.",
+    "title": "développeur web",
     "skills": "Compétences",
     "paragraphs": {
-      "first": "Salut ! Je suis Nhat-Quan — développeur web formé  ",
-      "second": "Actuellement, je cherche une alternance en entreprise avec l'école Ironhack à partir de novembre 2025. La formation dure 13 mois, avec un rythme de 4 jours en entreprise et 1 jour en formation par semaine."
+      "first": "Salut ! Je suis Nhat-Quan — ",
+      "second": "Actuellement à la recherche d’une entreprise pour m’accompagner. Je vise une formation BAC +5 dans le domaine du développement web et logiciel."
     },
     "frontend": "Frontend",
     "backend": "Backend",
@@ -33,7 +33,7 @@
   "projects": {
     "badge": "Mes Réalisations",
     "title": "Découvrez Mes Projets",
-    "description": "Une sélection de mes projets web, démontrant mes compétences en développement d'applications modernes et performantes.",
+    "description": "Chaque projet a été réalisé en une semaine pour apprendre de nouvelles technologies. Ils ne sont pas tous finalisés, mais chacun m’a permis de progresser.",
     "viewMore": "Voir tous mes projets"
   },
   "allProjects": {

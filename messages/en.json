@@ -16,11 +16,11 @@
   },
   "about": {
     "badge": "About Me",
-    "title": "Self-taught web developer.",
+    "title": "web developer.",
     "skills": "Skills",
     "paragraphs": {
-      "first": "Hi! I'm Nhat-Quan — a trained web developer. ",
-      "second": "I am currently looking for a work-study position with Ironhack starting in November 2025. The program lasts 13 months, with a schedule of 4 days in the company and 1 day of training per week."
+      "first": "Hi! I'm Nhat-Quan — ",
+      "second": "Currently looking for a company to support me. I am aiming for a Master's degree in web and software development."
     },
     "frontend": "Frontend",
     "backend": "Backend",
@@ -33,7 +33,7 @@
   "projects": {
     "badge": "My Work",
     "title": "Discover My Projects",
-    "description": "A selection of my web projects, demonstrating my skills in developing modern and high-performance applications.",
+    "description": "Each project was completed in one week to learn new technologies. They are not all finished, but each one helped me progress.",
     "viewMore": "See all my projects"
   },
   "allProjects": {
