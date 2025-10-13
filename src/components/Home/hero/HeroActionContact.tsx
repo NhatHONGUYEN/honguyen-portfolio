@@ -3,6 +3,7 @@ import {
   InstagramIcon,
   TwitterIcon,
 } from '@/components/SocialIcons';
+import CvDownloadButton from '@/components/ui/buttons/CvDownloadButton';
 import SimpleContactLink from '@/components/ui/buttons/SimpleContactLink';
 import Link from 'next/link';
 
@@ -26,8 +27,9 @@ export default function HeroActionContact() {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center lg:items-end xl:items-center justify-center lg:justify-end gap-4 mt-6 lg:mt-0 lg:pr-16">
-      <div className="flex items-center gap-2 sm:gap-3">
+    <div className="flex flex-col items-center md:flex-col gap-2">
+      <div className="flex gap-2 mb-2">
+        {/* Social icons */}
         {socialIcons?.map((social, index) => {
           const IconComponent = social.component;
           return (
@@ -44,6 +46,7 @@ export default function HeroActionContact() {
         })}
       </div>
       <SimpleContactLink />
+      <CvDownloadButton />
     </div>
   );
 }

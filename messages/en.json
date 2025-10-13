@@ -72,7 +72,8 @@
   },
   "ui": {
     "scrollToTop": "Back to top",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "downloadCV": "Download CV"
   },
   "experience": {
     "title": "Professional Experience",

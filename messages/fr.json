@@ -89,7 +89,8 @@
   },
   "ui": {
     "scrollToTop": "Retour en haut",
-    "getInTouch": "Me contacter"
+    "getInTouch": "Me contacter",
+    "downloadCV": "Télécharger CV"
   },
   "experience": {
     "title": "Expériences Professionnelles",

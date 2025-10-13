@@ -1,11 +1,14 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
-export default function SimpleContactLink() {
+export default function CvDownloadButton() {
   const t = useTranslations('ui');
   return (
     <Link
-      href="#contact"
+      href="/CV%20Nhat%20Quan%20HO%20NGUYEN.pdf"
+      download
+      target="_blank"
+      rel="noopener noreferrer"
       className="inline-block w-48 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
     >
       <span className="flex items-center gap-2 sm:gap-3 py-2 sm:py-2.5 px-4 sm:px-5 rounded-full">
@@ -19,10 +22,10 @@ export default function SimpleContactLink() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            d="M12 16v-8m0 8l-4-4m4 4l4-4M4 20h16"
           />
         </svg>
-        <span className="text-gray-700">{t('getInTouch')}</span>
+        <span className="text-gray-700">{t('downloadCV')}</span>
       </span>
     </Link>
   );
