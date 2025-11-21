@@ -24,76 +24,87 @@ export default function ContactNotification({
 }: ContactEmailProps) {
   return (
     <Html>
-      <Body className="bg-white font-sans">
-        <Container className="max-w-xl mx-auto p-4 border border-gray-200 rounded-lg">
-          {/* Section française */}
-          {(language === 'fr' || !language) && (
-            <>
-              <Heading className="text-xl font-bold text-blue-600">
-                📨 Nouveau message de contact
-              </Heading>
-              <Section>
-                <Text className="text-sm text-gray-500">
-                  Vous avez reçu un nouveau message de contact via votre
-                  portfolio.
-                </Text>
-                <Text className="font-medium mt-4">👤 Expéditeur: {name}</Text>
-                <Text className="font-medium">📧 Email: {email}</Text>
-              </Section>
-              <Hr className="my-4 border-t border-gray-200" />
-              <Section>
-                <Text className="font-medium">💬 Message:</Text>
-                <Text className="text-gray-700 bg-gray-50 p-3 rounded">
-                  {message}
-                </Text>
-              </Section>
-            </>
-          )}
-
-          {language === 'fr' && (
-            <Hr className="my-4 border-t border-gray-200" />
-          )}
-
-          {/* Section anglaise */}
-          {(language === 'en' || !language) && (
-            <>
-              <Heading className="text-xl font-bold text-blue-600">
-                📨 New contact message
-              </Heading>
-              <Section>
-                <Text className="text-sm text-gray-500">
-                  You have received a new contact message through your
-                  portfolio.
-                </Text>
-                <Text className="font-medium mt-4">👤 From: {name}</Text>
-                <Text className="font-medium">📧 Email: {email}</Text>
-              </Section>
-              <Hr className="my-4 border-t border-gray-200" />
-              <Section>
-                <Text className="font-medium">💬 Message:</Text>
-                <Text className="text-gray-700 bg-gray-50 p-3 rounded">
-                  {message}
-                </Text>
-              </Section>
-            </>
-          )}
-
-          <Hr className="my-4 border-t border-gray-200" />
-
-          {/* Instructions */}
+      <Body
+        style={{
+          backgroundColor: '#f6f6f6',
+          fontFamily: 'Arial, sans-serif',
+          margin: 0,
+          padding: 0,
+        }}
+      >
+        <Container
+          style={{
+            maxWidth: 600,
+            margin: '40px auto',
+            backgroundColor: '#fff',
+            border: '1px solid #e5e7eb',
+            borderRadius: 8,
+            padding: 24,
+          }}
+        >
+          <Heading
+            style={{
+              fontSize: 20,
+              fontWeight: 'bold',
+              color: '#2563eb',
+              marginBottom: 16,
+              marginTop: 0,
+            }}
+          >
+            {language === 'fr'
+              ? 'Nouveau message de contact'
+              : 'New contact message'}
+          </Heading>
           <Section>
-            {(language === 'fr' || !language) && (
-              <Text className="text-sm text-gray-600">
-                📝 FR: Pour répondre, utilisez simplement la fonction
-                &ldquo;Répondre&rdquo; de votre client de messagerie.
-              </Text>
-            )}
-            {(language === 'en' || !language) && (
-              <Text className="text-sm text-gray-600">
-                📝 EN: To reply, simply use the &ldquo;Reply&rdquo; function in
-                your email client.
-              </Text>
-            )}
+            <Text style={{ fontSize: 15, marginBottom: 12 }}>
+              {language === 'fr'
+                ? 'Vous avez reçu un nouveau message via votre portfolio.'
+                : 'You have received a new message through your portfolio.'}
+            </Text>
+            <Text style={{ fontSize: 15, marginBottom: 4 }}>
+              {language === 'fr' ? 'Expéditeur' : 'From'}: {name}
+            </Text>
+            <Text style={{ fontSize: 15, marginBottom: 4 }}>
+              Email: {email}
+            </Text>
+          </Section>
+          <Hr
+            style={{
+              margin: '24px 0',
+              border: 0,
+              borderTop: '1px solid #e5e7eb',
+            }}
+          />
+          <Section>
+            <Text style={{ fontWeight: 'bold', fontSize: 15, marginBottom: 4 }}>
+              {language === 'fr' ? 'Message' : 'Message'}:
+            </Text>
+            <Text
+              style={{
+                background: '#f9fafb',
+                padding: 12,
+                borderRadius: 6,
+                fontSize: 15,
+                marginBottom: 0,
+                marginTop: 0,
+              }}
+            >
+              {message}
+            </Text>
+          </Section>
+          <Hr
+            style={{
+              margin: '24px 0',
+              border: 0,
+              borderTop: '1px solid #e5e7eb',
+            }}
+          />
+          <Section>
+            <Text style={{ fontSize: 13, color: '#666' }}>
+              {language === 'fr'
+                ? 'Pour répondre, utilisez la fonction "Répondre" de votre messagerie.'
+                : 'To reply, use the "Reply" function in your email client.'}
+            </Text>
           </Section>
         </Container>
       </Body>

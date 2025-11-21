@@ -5,7 +5,7 @@ export default function CvDownloadButton() {
   const t = useTranslations('ui');
   return (
     <Link
-      href="/CV%20Nhat%20Quan%20HO%20NGUYEN.pdf"
+      href="/HO_NGUYEN_Nhat-Quan_CV.pdf"
       download
       target="_blank"
       rel="noopener noreferrer"
